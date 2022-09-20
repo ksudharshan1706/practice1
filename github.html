@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .top-div{
+            height : 150px;
+            background-color: black;
+            color: white;  
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;    
+            justify-content: center;
+        }
+        .body-box{
+            display:flex;
+            height: 900px;
+            /* border: 5px solid green; */
+        }
+        .left-box-border{
+            height: 900px;
+            width: 600px;
+            /* border: 5px solid red; */
+            /* position: relative; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .left-box{
+            height: 750px;
+            width: 400px;
+            background-color: rgb(10, 42, 39);
+            border-radius: 20px;
+            /* position: relative; */
+
+            }
+        .right-box{
+            height: 900px;
+            width: 1400px;
+            display: flex;
+            flex-direction: column;  
+        }
+        input{
+            height: 50px;
+            width: 600px;
+            background-color: rgb(10, 42, 39);
+            border-radius: 20px;
+            font-size: x-large;
+            color: white;
+        }
+        .div_range{
+            height: 300px;
+            /* border: 5px solid; */
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            top: 100px;
+        }
+        .div-content{
+            height: 150px;
+            width: 300px;
+            background-color: rgb(10, 42, 39);
+            border-radius: 20px; 
+            
+        }
+        .right-bottom{
+            width: 900px;
+            height: 200px;
+            background-color: rgb(10, 42, 39);
+            border-radius: 20px;
+        }
+        
+    </style>
+</head>
+<body style="background-color: rgb(199, 207, 205);">
+    <div class="top-div">
+        <div>
+            <img style = "height: 75px;"src= "./github.jpeg" alt="github_img"/>
+        </div>
+        <div class ="">
+            <h2 style="font-size:30px">G I T H U B</h2>
+        </div>
+    </div>
+    <div class="body-box">
+        <div class="left-box-border ">
+            <div class = "left-box">
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="div_range">
+                <input type="search" name="search" id="search" placeholder="   S e a r c h"/>
+            </div>
+            <div class="div_range">
+                    <div class="div-content"></div>
+                    <div class="div-content"></div>
+                    <div class="div-content"></div>
+            </div>
+            <div class="div_range">
+                    <div class="right-bottom"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
