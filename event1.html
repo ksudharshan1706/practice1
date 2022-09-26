@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event 1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+        .main_container{
+            width:1000px;margin: 50px 15% ;border: 3px solid;height: 500px;
+        }
+        .two_container{
+            position: relative;
+            top: 10%;
+            display: flex;
+            flex-wrap: wrap;
+            height: 60%;
+            width: 90%;
+            border: 3px solid black;
+        }
+        .inner_div_left{
+            width: 30%;
+        }
+        .inner_div_right{
+            text-align: center;
+            margin: auto;
+            width: 70%;
+        }
+        .inner_left_div{
+            border:3px solid;
+            /* position: relative; */
+            /* position: flex;
+            flex-wrap: wrap; */
+            height: 80%;
+            top: 20px;
+            padding: 10px;
+            margin: 20px;
+        }
+        h4{
+            text-align: center;
+        }
+        .circle{
+            
+            height: 200px;
+            width: 190px;
+            border-radius: 50%;
+            /* padding: 100px;
+            margin: 100px; */
+        }
+    </style>
+</head>
+<body>
+    <div  class="container main_container">
+        <br>
+
+        <h4>EVENT</h4>
+        <h4>Number of Available slots: 23</h4>
+        <div class="container two_container">
+            <div class="inner_div_left">
+                <div class="inner_left_div">
+                    <img class="circle" style="position:relative;top:5px" src="/event.jpeg"/>
+                    <!-- ?<i class="fa-solid fa-check-to-slot circle"></i> -->
+                </div>
+            </div>
+                
+                <form class="inner_div_right" >
+                    <label for="Name">Name:</label>
+                    <input type="text" id="Name" required/><br>
+                    <label for="Email">Email:</label>
+                    <input type="email" id="Email" required/><br>
+                    <label for="Phone">Phno:</label>
+                    <input type="tel" id="Phone" required/><br>
+                    <label for="seats">Number of Seats:</label>
+                    <input type="range" id="seats"/><br>
+                    <label for="2Name">Name of Attendee 2:</label>
+                    <input type="text" id="2Name"/><br>
+                    <input type="submit" placeholder="SUBMIT"/>
+                    <input type="reset" placeholder="Reset"/>
+                </form>
+        </div>
+    </div>
+    
+</body>
+</html>
