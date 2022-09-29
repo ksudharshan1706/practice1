@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <style>
+    .container_style{
+        /* border: 1px solid; */
+        height: 600px;
+        width: 800px;
+    }
+    .center_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .top_container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .bottom_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container_two{
+        height: 150px;
+        width: 150px;
+    }
+    img{
+        height: 150px;
+        width: 150px;
+        border-radius: 5%;
+    }
+    img:hover{
+        border: 4px solid white;
+    }
+    h1,h6{
+        text-align: center;
+        color: white;
+    }
+    .outer_div{
+        /* border: 1px solid; */
+        height: 200px;
+    }
+    
+</style>
+</head>
+<body style="background-color: black">
+    <div>
+        <img style = "height: 100px;width: 150px;"src="/Netflix.jpeg" alt="netlifimg"/>
+    </div>
+
+    <div  class="container container_style">
+        <div class="container outer_div top_container">
+        <!-- </div>text-align: center"> -->
+            <h1>Who's Watching?</h1>
+        </div>
+        <div class="container outer_div center_container">
+            <div class="container_two">
+                <img src="profile1.jpeg" alt="profile1"/>
+                <br>
+                <h6>Vishnu</h6>
+            </div>
+            <div class="container_two">
+                <img src="profile2.jpeg" alt="profile2"/>
+                <h6 >Sudha</h6>
+            </div>
+            <div class="container_two">
+                <img src="profile3.jpeg" alt="profile3"/>
+                <h6>Parents</h6>
+            </div>
+            <div class="container_two">
+                <img src="profile4.jpeg" alt="profile4"/>
+                <h6>V</h6>
+            </div>
+        </div>
+        <div class="container outer_div bottom_container">
+            <button style="width: 200px;"type="button" onclick="alert('You pressed the button!')">Manage Profile</button>
+            <!-- <a aria-label="Manage Profile" class="profile-button">Manage Profile</a> -->
+        </div>
+    </div>
+</body>
+</html>
